@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FOODINFINI | Réstaurant du bien être{% endblock %}
+
+{% block body %}
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>{{dishes1.name}}</span>!</h2>
+								<p>Essayez-le maintenant, {{dishes1.description}} à seulement {{dishes1.price}} DZD ! Exclusivement un plat du jour. </p>
+								<a href="{{path('menu')}}" class="site-btn">Menu</a>
+								<a href="{{path('order', {id:dishes1.id})}}" class="site-btn sb-c2">Commander</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{{asset('plat/' ~ dishes1.image)}}" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>{{dishes2.name}}</span>!</h2>
+								<p>Essayez-le maintenant, {{dishes2.description}} à seulement {{dishes2.price}} DZD ! Exclusivement un plat du jour. </p>
+								<a href="{{path('menu')}}" class="site-btn">Menu</a>
+								<a href="{{path('order', {id:dishes2.id})}}" class="site-btn sb-c2">Commander</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{{asset('plat/' ~ dishes2.image)}}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>{{dishes3.name}}</span>!</h2>
+								<p>Essayez-le maintenant, {{dishes3.description}} à seulement {{dishes3.price}} DZD ! Exclusivement un plat du jour. </p>
+								<a href="{{path('menu')}}" class="site-btn">Menu</a>
+								<a href="{{path('order', {id:dishes3.id})}}" class="site-btn sb-c2">Commander</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{{asset('plat/' ~ dishes3.image)}}" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hs-text">
+								<h2><span>{{dishes4.name}}</span>!</h2>
+								<p>Essayez-le maintenant, {{dishes1.description}} à seulement {{dishes4.price}} DZD ! Exclusivement un plat du jour. </p>
+								<a href="{{path('menu')}}" class="site-btn">Menu</a>
+								<a href="{{path('order', {id:dishes4.id})}}" class="site-btn sb-c2">Commander</a>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="hr-img">
+								<img src="{{asset('plat/' ~ dishes4.image)}}" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	
+{% endblock %}
