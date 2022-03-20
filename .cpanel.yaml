@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/edemwynv/foodinfini2/public/
+    - export DEPLOYPATH=/home/edemwynv/foodinfini2/
     - /bin/cp -R * $DEPLOYPATH
