@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/edemwynv/public_html/foodinfini/
+    - export DEPLOYPATH=/home/edemwynv/public_html/
     - /bin/cp -R 755 * $DEPLOYPATH
