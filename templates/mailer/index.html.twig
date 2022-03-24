@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+{% for message in app.flashes('message') %}
+<div class="alert alert-success">
+<h3>{{message}}</h3>
+</div>
+
+{% endfor %}
+
+<section class="contact-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 p-0">
+					<!-- Map -->
+					<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102367.33318772461!2d4.005478869463716!3d36.69903862820416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128dc7dfbffd090b%3A0x27cd9a20dc200804!2sTizi%20Ouzou%2C%20Alg%C3%A9rie!5e0!3m2!1sfr!2sbd!4v1647593455763!5m2!1sfr!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="contact-warp">
+						<div class="section-title mb-0">
+							<h2>Contactez-nous!</h2>
+						</div>
+						<p>FOODINFINI un réstaurant de luxe situé (TIZI OUZOU, Algérie) se retrouve au milieu de la ville,</p>
+                        {{form(emailForm)}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
