@@ -14,10 +14,10 @@ class HomeController extends AbstractController
     {
         $dishe = $ds->findAll();
         $random = array_rand($dishe, 4);
-        dump($dishe[$random[0]]);
-        dump($dishe[$random[1]]);
-        dump($dishe[$random[2]]);
-        dump($dishe[$random[3]]);
+        $dishe[$random[0]];
+        $dishe[$random[1]];
+        $dishe[$random[2]];
+        $dishe[$random[3]];
         return $this->render('home/index.html.twig', [
             'dishes1'=>$dishe[$random[0]],
             'dishes2'=>$dishe[$random[1]],
